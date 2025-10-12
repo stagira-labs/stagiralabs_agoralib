@@ -6,6 +6,7 @@ import Library.duh
 import Library.file_kwf98hlx
 import Library.file_kwf98hlx_2
 import Library.file_ujm963i7
+import Library.foo.bar
 import Library.foo.bar.test
 import Library.multi
 import Library.targ_mod
