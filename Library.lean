@@ -1,4 +1,5 @@
 -- Import every contribution from Library
+import Library.contrib_mod
 import Library.duh
 import Library.file_kwf98hlx
 import Library.file_kwf98hlx_2
