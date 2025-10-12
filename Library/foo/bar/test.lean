@@ -1,2 +1,4 @@
--- Submitted by: test, Time: 880146647447/500, Name: foo/bar/test
-theorem subdir_test : 1=1 := by rfl
+-- Submitted by: test, Time: 1760294081451/1000, Name: foo/bar/test
+
+
+theorem nested_contrib_test : 1=1:=by rfl
