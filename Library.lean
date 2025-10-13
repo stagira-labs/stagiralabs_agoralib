@@ -18,6 +18,7 @@ import Library.foo.bar.test
 import Library.foo.duhhh
 import Library.foooo.barrr
 import Library.inner.test_targ
+import Library.last
 import Library.multi
 import Library.targ_mod
 import Library.targ_mod_2
