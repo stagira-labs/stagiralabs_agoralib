@@ -2,6 +2,7 @@
 import Library.contrib_mod
 import Library.contrib_mod_2
 import Library.contrib_mod_test
+import Library.dir.dir2.file
 import Library.duh
 import Library.ephemeral_targ
 import Library.ephemeral_test
