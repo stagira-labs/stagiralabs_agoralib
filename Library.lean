@@ -3,6 +3,7 @@ import Library.contrib_mod
 import Library.contrib_mod_2
 import Library.contrib_mod_test
 import Library.dir.dir2.file
+import Library.distrib_test
 import Library.duh
 import Library.dummy
 import Library.easy.med.hard
