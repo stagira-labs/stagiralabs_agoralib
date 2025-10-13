@@ -5,6 +5,7 @@ import Library.contrib_mod_test
 import Library.dir.dir2.file
 import Library.duh
 import Library.dummy
+import Library.easy.med.hard
 import Library.ephemeral_targ
 import Library.ephemeral_test
 import Library.file_231rz5je
