@@ -16,6 +16,7 @@ import Library.file_xif9ygb0
 import Library.foo.bar
 import Library.foo.bar.test
 import Library.foo.duhhh
+import Library.foooo.barrr
 import Library.inner.test_targ
 import Library.multi
 import Library.targ_mod
