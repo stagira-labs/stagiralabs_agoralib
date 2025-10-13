@@ -4,4 +4,5 @@ import Targets.test
 import Targets.thing
 import Targets.thingy
 import Targets.thingyy
+import Targets.qweporu
 import Targets.yourmom
