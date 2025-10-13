@@ -1,4 +1,5 @@
 -- Import every target from Agora/targets
+import Targets.qwpeoir
 import Targets.test
 import Targets.thing
 import Targets.thingy
