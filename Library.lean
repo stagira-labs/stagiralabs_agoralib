@@ -38,6 +38,7 @@ import Library.qewrb
 import Library.qwpeoirumcxvn
 import Library.qww
 import Library.re
+import Library.res
 import Library.targ_mod
 import Library.targ_mod_2
 import Library.targ_test
