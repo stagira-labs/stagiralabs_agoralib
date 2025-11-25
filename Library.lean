@@ -1,4 +1,4 @@
--- Import every contribution from Library
+-- Auto-generated import file for Library
 import Library.test
 import Library.test2
 import Library.test3
