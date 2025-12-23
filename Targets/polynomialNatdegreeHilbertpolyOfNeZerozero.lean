@@ -38,7 +38,7 @@ the characteristic of `F` to be divisible by `d!`. As `Polynomial.hilbertPoly` m
 ## TODO
 
 * Hilbert polynomials of finitely generated graded modules over Noetherian rings.
--/-
+-/
 
 open Nat PowerSeries
 

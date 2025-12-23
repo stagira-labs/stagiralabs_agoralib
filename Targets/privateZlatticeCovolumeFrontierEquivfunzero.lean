@@ -108,11 +108,6 @@ variable {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]
 variable {L : Submodule ℤ E} [DiscreteTopology L] [IsZLattice ℝ L]
 variable {ι : Type*} [Fintype ι] (b : Basis ι ℤ L)
 
-/-- A version of `ZLattice.covolume.tendsto_card_div_pow` for the general case;
-see the `Naming convention` section in the introduction. -/
-/-- A version of `ZLattice.covolume.tendsto_card_le_div` for the general case;
-see the `Naming conventions` section in the introduction. -/
-
 end General
 
 section Pi
