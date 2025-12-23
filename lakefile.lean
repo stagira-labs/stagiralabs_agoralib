@@ -20,9 +20,6 @@ require VerifiedAgora from git
   "https://github.com/stagiralabs/VerifiedAgora.git" @ "v4.17.0"
 
 @[default_target]
-lean_lib Library where
-
-@[default_target]
 lean_lib Targets where
 
 
