@@ -1,4 +1,5 @@
 import Library
+import VerifiedAgora.tagger
 
 -- Submitted at: 1757895574833/1000, Name: isapproximatesubgroupCardMulSelfLeone
 /-
@@ -94,6 +95,6 @@ lemma card_pow_le [DecidableEq G] {A : Finset G} (hA : IsApproximateSubgroup K (
       _ ≤ #F ^ (n + 1) * #A := by gcongr; exact mod_cast Finset.card_pow_le
       _ ≤ K ^ (n + 1) * #A := by gcongr
 
-@[to_additive]
+@[to_additive, target]
 lemma card_mul_self_le [DecidableEq G] {A : Finset G} (hA : IsApproximateSubgroup K (A : Set G)) :
-    #(A * A) ≤ K * #A := by exact?
+    #(A * A) ≤ K * #A := by sorry

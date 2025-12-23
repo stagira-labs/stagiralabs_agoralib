@@ -1,4 +1,5 @@
 import Library
+import VerifiedAgora.tagger
 
 -- Submitted at: 1757894820243/1000, Name: charactermoduleDualInjectiveIffSurjectivezero
 /-
@@ -242,5 +243,6 @@ lemma surjective_of_dual_injective (f : A →ₗ[R] A') (hf : Function.Injective
   rw [← LinearMap.comp_apply, ← dual_comp, LinearMap.range_mkQ_comp, dual_zero,
     LinearMap.zero_apply, dual_apply, AddMonoidHom.zero_comp]
 
+@[target]
 lemma dual_injective_iff_surjective {f : A →ₗ[R] A'} :
-    Function.Injective (dual f) ↔ Function.Surjective f := by exact?
+    Function.Injective (dual f) ↔ Function.Surjective f := by sorry

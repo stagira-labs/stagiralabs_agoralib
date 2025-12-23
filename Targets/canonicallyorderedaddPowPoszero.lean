@@ -1,4 +1,5 @@
 import Library
+import VerifiedAgora.tagger
 
 -- Submitted at: 35157894767/20, Name: canonicallyorderedaddPowPoszero
 /-
@@ -77,4 +78,5 @@ protected theorem mul_pos [NoZeroDivisors α] {a b : α} :
     0 < a * b ↔ 0 < a ∧ 0 < b := by
   simp only [pos_iff_ne_zero, ne_eq, mul_eq_zero, not_or]
 
-lemma pow_pos [NoZeroDivisors α] {a : α} (ha : 0 < a) (n : ℕ) : 0 < a ^ n := by exact?
+@[target]
+lemma pow_pos [NoZeroDivisors α] {a : α} (ha : 0 < a) (n : ℕ) : 0 < a ^ n := by sorry

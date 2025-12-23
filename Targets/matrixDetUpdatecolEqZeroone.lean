@@ -1,4 +1,5 @@
 import Library
+import VerifiedAgora.tagger
 
 -- Submitted at: 219736980173/125, Name: matrixDetUpdatecolEqZeroone
 /-
@@ -132,5 +133,6 @@ theorem det_updateRow_eq_zero (h : i ≠ j) :
     (M.updateRow j (M i)).det = 0 := det_zero_of_row_eq h (by simp [h])
 
 /-- If we repeat a column of a matrix, we get a matrix of determinant zero. -/
+@[target]
 theorem det_updateCol_eq_zero (h : i ≠ j) :
-    (M.updateCol j (fun k ↦ M k i)).det = 0 := det_zero_of_column_eq h (by exact?
+    (M.updateCol j (fun k ↦ M k i)).det = 0 := det_zero_of_column_eq h (by sorry
