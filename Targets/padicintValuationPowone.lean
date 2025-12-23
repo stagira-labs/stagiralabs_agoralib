@@ -1,4 +1,5 @@
 import Library
+import VerifiedAgora.tagger
 
 -- Submitted at: 439474072061/250, Name: padicintValuationPowone
 /-
@@ -324,6 +325,6 @@ lemma le_valuation_add (hxy : x + y ≠ 0) : min x.valuation y.valuation ≤ (x 
     (x * y).valuation = x.valuation + y.valuation := by
   zify; simp [← valuation_coe, Padic.valuation_mul (coe_ne_zero.2 hx) (coe_ne_zero.2 hy)]
 
-@[simp]
+@[simp, target]
 lemma valuation_pow (x : ℤ_[p]) (n : ℕ) : (x ^ n).valuation = n * x.valuation := by
-  exact?
+  sorry

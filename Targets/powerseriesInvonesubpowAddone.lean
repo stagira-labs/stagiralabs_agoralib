@@ -1,4 +1,5 @@
 import Library
+import VerifiedAgora.tagger
 
 -- Submitted at: 1757896681883/1000, Name: powerseriesInvonesubpowAddone
 /-
@@ -160,6 +161,7 @@ theorem mk_add_choose_mul_one_sub_pow_eq_one :
     (mk fun n ↦ Nat.choose (d + n) d : S⟦X⟧) * ((1 - X) ^ (d + 1)) = 1 :=
   (invOneSubPow S (d + 1)).val_inv
 
+@[target]
 theorem invOneSubPow_add (e : ℕ) :
     invOneSubPow S (d + e) = invOneSubPow S d * invOneSubPow S e := by
-  exact?
+  sorry

@@ -1,4 +1,5 @@
 import Library
+import VerifiedAgora.tagger
 
 -- Submitted at: 219737102806/125, Name: privateZlatticeCovolumeFrontierEquivfunzero
 /-
@@ -119,8 +120,9 @@ section Pi
 
 open Filter Fintype Pointwise Topology Bornology
 
+@[target]
 private theorem frontier_equivFun {E : Type*} [AddCommGroup E] [Module ℝ E] {ι : Type*} [Fintype ι]
     [TopologicalSpace E] [IsTopologicalAddGroup E] [ContinuousSMul ℝ E] [T2Space E]
     (b : Basis ι ℝ E) (s : Set E) :
     frontier (b.equivFun '' s) = b.equivFun '' (frontier s) := by
-  exact?
+  sorry

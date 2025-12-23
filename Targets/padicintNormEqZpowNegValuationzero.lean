@@ -1,4 +1,5 @@
 import Library
+import VerifiedAgora.tagger
 
 -- Submitted at: 1757896152453/1000, Name: padicintNormEqZpowNegValuationzero
 /-
@@ -328,5 +329,6 @@ lemma le_valuation_add (hxy : x + y ≠ 0) : min x.valuation y.valuation ≤ (x 
 lemma valuation_pow (x : ℤ_[p]) (n : ℕ) : (x ^ n).valuation = n * x.valuation := by
   zify; simp [← valuation_coe]
 
+@[target]
 lemma norm_eq_zpow_neg_valuation {x : ℤ_[p]} (hx : x ≠ 0) : ‖x‖ = p ^ (-x.valuation : ℤ) := by
-  exact?
+  sorry

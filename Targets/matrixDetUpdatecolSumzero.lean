@@ -1,4 +1,5 @@
 import Library
+import VerifiedAgora.tagger
 
 -- Submitted at: 878948009617/500, Name: matrixDetUpdatecolSumzero
 /-
@@ -415,6 +416,7 @@ theorem det_updateRow_sum (A : Matrix n n R) (j : n) (c : n → R) :
 
 /-- If we replace a column of a matrix by a linear combination of its columns, then the determinant
 is multiplied by the coefficient of that column. -/
+@[target]
 theorem det_updateCol_sum (A : Matrix n n R) (j : n) (c : n → R) :
     (A.updateCol j (fun k ↦ ∑ i, (c i) • A k i)).det = (c j) • A.det := by
-  exact?
+  sorry

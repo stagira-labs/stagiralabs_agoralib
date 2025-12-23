@@ -1,4 +1,5 @@
 import Library
+import VerifiedAgora.tagger
 
 -- Submitted at: 1757896767059/1000, Name: powerseriesOneSubPowAddMulInvonesubpowValEqOneSubPowzero
 /-
@@ -168,6 +169,7 @@ theorem one_sub_pow_mul_invOneSubPow_val_add_eq_invOneSubPow_val (e : ℕ) :
     (1 - X) ^ e * (invOneSubPow S (d + e)).val = (invOneSubPow S d).val := by
   simp [invOneSubPow_add, Units.val_mul, mul_comm, mul_assoc, ← invOneSubPow_inv_eq_one_sub_pow]
 
+@[target]
 theorem one_sub_pow_add_mul_invOneSubPow_val_eq_one_sub_pow (e : ℕ) :
     (1 - X) ^ (d + e) * (invOneSubPow S e).val = (1 - X) ^ d := by
-  exact?
+  sorry

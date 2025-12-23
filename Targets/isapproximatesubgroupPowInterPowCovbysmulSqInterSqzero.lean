@@ -1,4 +1,5 @@
 import Library
+import VerifiedAgora.tagger
 
 -- Submitted at: 1757895663139/1000, Name: isapproximatesubgroupPowInterPowCovbysmulSqInterSqzero
 /-
@@ -135,8 +136,8 @@ lemma of_small_tripling [DecidableEq G] {A : Finset G} (hA₁ : 1 ∈ A) (hAsymm
     exact ⟨F, hF, by norm_cast; simpa [div_eq_mul_inv, pow_succ, mul_assoc, hAsymm] using hAF⟩
 
 open Set in
-@[to_additive]
+@[to_additive, target]
 lemma pow_inter_pow_covBySMul_sq_inter_sq
     (hA : IsApproximateSubgroup K A) (hB : IsApproximateSubgroup L B) (hm : 2 ≤ m) (hn : 2 ≤ n) :
     CovBySMul G (K ^ (m - 1) * L ^ (n - 1)) (A ^ m ∩ B ^ n) (A ^ 2 ∩ B ^ 2) := by
-  exact?
+  sorry

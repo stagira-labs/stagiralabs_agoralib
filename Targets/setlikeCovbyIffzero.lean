@@ -1,4 +1,5 @@
 import Library
+import VerifiedAgora.tagger
 
 -- Submitted at: 175789692587/100, Name: setlikeCovbyIffzero
 /-
@@ -201,6 +202,7 @@ theorem isCoatom_iff [OrderTop A] {K : A} :
   simp_rw [IsCoatom, lt_iff_le_not_le, SetLike.not_le_iff_exists,
     and_comm (a := _ ≤ _), and_imp, exists_imp, ← and_imp, and_comm]
 
+@[target]
 theorem covBy_iff {K L : A} :
     K ⋖ L ↔ K < L ∧ ∀ H g, K ≤ H → H ≤ L → g ∉ K → g ∈ H → H = L := by
-  exact?
+  sorry

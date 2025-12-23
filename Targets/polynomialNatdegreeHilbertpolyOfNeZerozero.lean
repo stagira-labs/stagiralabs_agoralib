@@ -1,4 +1,5 @@
 import Library
+import VerifiedAgora.tagger
 
 -- Submitted at: 439474148383/250, Name: polynomialNatdegreeHilbertpolyOfNeZerozero
 /-
@@ -264,7 +265,8 @@ theorem natDegree_hilbertPoly_of_ne_zero_of_rootMultiplicity_lt
       false_and, or_false, inv_eq_zero, cast_eq_zero, not_or]
     exact ⟨(not_iff_not.2 dvd_iff_isRoot).1 hq2, factorial_ne_zero _⟩
 
+@[target]
 theorem natDegree_hilbertPoly_of_ne_zero
     {p : F[X]} {d : ℕ} (hh : hilbertPoly p d ≠ 0) :
     (hilbertPoly p d).natDegree = d - p.rootMultiplicity 1 - 1 := by
-  exact?
+  sorry

@@ -135,4 +135,4 @@ theorem det_updateRow_eq_zero (h : i ≠ j) :
 /-- If we repeat a column of a matrix, we get a matrix of determinant zero. -/
 @[target]
 theorem det_updateCol_eq_zero (h : i ≠ j) :
-    (M.updateCol j (fun k ↦ M k i)).det = 0 := det_zero_of_column_eq h (by sorry
+    (M.updateCol j (fun k ↦ M k i)).det = 0 := by sorry

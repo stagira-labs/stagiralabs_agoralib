@@ -1,4 +1,5 @@
 import Library
+import VerifiedAgora.tagger
 
 -- Submitted at: 878947351303/500, Name: canonicallyorderedaddMulPosone
 /-
@@ -72,7 +73,7 @@ abbrev toOrderedCommSemiring : OrderedCommSemiring α where
   mul_le_mul_of_nonneg_left := fun _ _ _ h _ => mul_le_mul_left' h _
   mul_le_mul_of_nonneg_right := fun _ _ _ h _ => mul_le_mul_right' h _
 
-@[simp]
+@[simp, target]
 protected theorem mul_pos [NoZeroDivisors α] {a b : α} :
     0 < a * b ↔ 0 < a ∧ 0 < b := by
-  exact?
+  sorry

@@ -52,5 +52,6 @@ protected instance instOne {G : Type*} [One G] [TopologicalSpace G] [ChartedSpac
     One C^n⟮I, N; I', G⟯ :=
   ⟨ContMDiffMap.const (1 : G)⟩
 
-@[target]
-@[to_additive (attr := by sorry
+@[target, to_additive]
+theorem coe_one {G : Type*} [One G] [TopologicalSpace G] [ChartedSpace H' G] :
+    ⇑(1 : C^n⟮I, N; I', G⟯) = 1 := by sorry

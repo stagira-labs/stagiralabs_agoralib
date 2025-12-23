@@ -1,4 +1,5 @@
 import Library
+import VerifiedAgora.tagger
 
 -- Submitted at: 1757896433861/1000, Name: polynomialHilbertpolyEqZeroOfLeRootmultiplicityOneone
 /-
@@ -231,7 +232,8 @@ lemma hilbertPoly_mul_one_sub_pow_add (p : F[X]) (d e : ℕ) :
   | zero => simp
   | succ e he => rw [pow_add, pow_one, ← mul_assoc, ← add_assoc, hilbertPoly_mul_one_sub_succ, he]
 
+@[target]
 lemma hilbertPoly_eq_zero_of_le_rootMultiplicity_one
     {p : F[X]} {d : ℕ} (hdp : d ≤ p.rootMultiplicity 1) :
     hilbertPoly p d = 0 := by
-  exact?
+  sorry

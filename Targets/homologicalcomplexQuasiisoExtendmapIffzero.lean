@@ -1,4 +1,5 @@
 import Library
+import VerifiedAgora.tagger
 
 -- Submitted at: 1757895496229/1000, Name: homologicalcomplexQuasiisoExtendmapIffzero
 /-
@@ -415,6 +416,7 @@ lemma quasiIsoAt_extendMap_iff :
 
 end
 
+@[target]
 lemma quasiIso_extendMap_iff [∀ j, K.HasHomology j] [∀ j, L.HasHomology j] :
     QuasiIso (extendMap φ e) ↔ QuasiIso φ := by
-  exact?
+  sorry

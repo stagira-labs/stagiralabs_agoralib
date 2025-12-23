@@ -1,4 +1,5 @@
 import Library
+import VerifiedAgora.tagger
 
 -- Submitted at: 1757895332401/1000, Name: homologicalcomplexExtendhomologyisoHomNaturalityone
 /-
@@ -400,8 +401,8 @@ lemma extendCyclesIso_hom_naturality :
       (K.extendCyclesIso e hj').hom ≫ cyclesMap φ j := by
   simp [← cancel_mono (L.iCycles j), extendMap_f φ e hj']
 
-@[reassoc (attr := simp)]
+@[reassoc (attr := simp), target]
 lemma extendHomologyIso_hom_naturality :
     homologyMap (extendMap φ e) j' ≫ (L.extendHomologyIso e hj').hom =
       (K.extendHomologyIso e hj').hom ≫ homologyMap φ j := by
-  exact?
+  sorry

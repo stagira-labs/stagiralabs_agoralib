@@ -1,4 +1,5 @@
 import Library
+import VerifiedAgora.tagger
 
 -- Submitted at: 70315782993/40, Name: algebraEtaleIffExistsAlgequivProdzero
 /-
@@ -195,9 +196,10 @@ end Algebra.FormallyEtale
 `A` is étale over a field `K` if and only if
 `A` is a finite product of finite separable field extensions.
 -/
+@[target]
 theorem Algebra.Etale.iff_exists_algEquiv_prod :
     Etale K A ↔
       ∃ (I : Type u) (_ : Finite I) (Ai : I → Type u) (_ : ∀ i, Field (Ai i))
         (_ : ∀ i, Algebra K (Ai i)) (_ : A ≃ₐ[K] Π i, Ai i),
         ∀ i, Module.Finite K (Ai i) ∧ Algebra.IsSeparable K (Ai i) := by
-  exact?
+  sorry
