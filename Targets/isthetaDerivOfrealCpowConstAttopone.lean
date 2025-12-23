@@ -1,4 +1,3 @@
-import Library
 import VerifiedAgora.tagger
 
 -- Submitted at: 351579157733/200, Name: isthetaDerivOfrealCpowConstAttopone

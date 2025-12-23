@@ -1,4 +1,3 @@
-import Library
 import VerifiedAgora.tagger
 
 -- Submitted at: 878947603491/500, Name: derivNormOfrealCpowzero

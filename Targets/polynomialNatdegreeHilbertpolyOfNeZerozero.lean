@@ -1,4 +1,3 @@
-import Library
 import VerifiedAgora.tagger
 
 -- Submitted at: 439474148383/250, Name: polynomialNatdegreeHilbertpolyOfNeZerozero

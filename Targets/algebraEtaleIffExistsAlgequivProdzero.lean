@@ -1,4 +1,3 @@
-import Library
 import VerifiedAgora.tagger
 
 -- Submitted at: 70315782993/40, Name: algebraEtaleIffExistsAlgequivProdzero
