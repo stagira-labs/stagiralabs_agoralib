@@ -2,9 +2,9 @@
 
 This file tracks contributions made through the [Agora](https://github.com/stagiralabs/agora) platform.
 
-**Original Repository:** https://github.com/stagiralabs/agoralib.git
+**Original Repository:** https://github.com/stagiralabs/agoralib
 **Tracking Branch:** main
-**Initialized:** 2025-12-26 00:46:49 UTC
+**Initialized:** 2025-12-26 15:51:48 UTC
 
 ---
 
