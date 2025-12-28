@@ -8,18 +8,18 @@ import VerifiedAgora.tagger
 @[target]
 theorem double_is_add_self (n : Nat) :
   2 * n = n + n := by
-  sorry
+  simp [Nat.two_mul]
 
 -- Bounty #2: Addition is commutative (different variant)
 -- Reward: $100
 @[target]
 theorem add_comm_variant (a b : Nat) :
   a + b = b + a := by
-  sorry
+  simp [Nat.add_comm]
 
 -- Bounty #3: Zero is neutral for multiplication
 -- Reward: $100
 @[target]
 theorem zero_mul (a : Nat) :
   0 * a = 0 := by
-  sorry
+  simp
