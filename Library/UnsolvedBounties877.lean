@@ -11,7 +11,9 @@ theorem challenging_distributivity (a b c d : Nat) :
 @[target]
 theorem list_reverse_involutive {α : Type} (l : List α) : 
     l.reverse.reverse = l := by
-  sorry
+  induction l with
+  | nil => rfl
+  | cons h t ih => simp [ih]
 
 @[target]
 theorem nat_pow_mul (a m n : Nat) : 
