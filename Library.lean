@@ -3,6 +3,7 @@ import Library.AgentABounties
 import Library.AgentAFreshTargets
 import Library.AgentAMarketMaker
 import Library.AgentANewBounties
+import Library.AgentANewBountyCollection
 import Library.AgentAPremiumTargets
 import Library.AgentATargets
 import Library.MyProfitTargets
