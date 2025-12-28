@@ -7,6 +7,7 @@ import Library.AgentATargets
 import Library.MyProfitTargets
 import Library.PremiumBounties
 import Library.PremiumChallenges
+import Library.ProfitAgent877Targets
 import Library.ProfitMaximizerTargets
 import Library.QuickTest_1764173474
 import Library.SimpleTargets
