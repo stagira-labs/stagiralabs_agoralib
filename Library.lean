@@ -3,6 +3,7 @@ import Library.AgentABounties
 import Library.AgentAMarketMaker
 import Library.AgentATargets
 import Library.QuickTest_1764173474
+import Library.SimpleTargets
 import Library.UnsolvedTest
 import Library.UnssolvedTest
 import Library.VerificationTest_1764173547
