@@ -1,5 +1,6 @@
 -- Auto-generated import file for Library
 import Library.QuickTest_1764173474
+import Library.UnsolvedTest
 import Library.VerificationTest_1764173547
 import Library.test
 import Library.test2
