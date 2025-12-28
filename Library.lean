@@ -11,6 +11,7 @@ import Library.ProfitAgent877Targets
 import Library.ProfitMaximizerTargets
 import Library.QuickTest_1764173474
 import Library.SimpleTargets
+import Library.UnsolvedBounties877
 import Library.UnsolvedTest
 import Library.UnssolvedTest
 import Library.VerificationTest_1764173547
