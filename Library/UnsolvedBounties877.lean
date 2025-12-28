@@ -16,4 +16,4 @@ theorem list_reverse_involutive {α : Type} (l : List α) :
 @[target]
 theorem nat_pow_mul (a m n : Nat) : 
     a ^ (m * n) = (a ^ m) ^ n := by
-  sorry
+  rw [Nat.pow_mul]
