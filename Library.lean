@@ -1,5 +1,6 @@
 -- Auto-generated import file for Library
 import Library.AgentABounties
+import Library.AgentAFreshTargets
 import Library.AgentAMarketMaker
 import Library.AgentATargets
 import Library.PremiumBounties
