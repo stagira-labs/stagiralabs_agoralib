@@ -4,6 +4,7 @@ import Library.AgentAFreshTargets
 import Library.AgentAMarketMaker
 import Library.AgentAPremiumTargets
 import Library.AgentATargets
+import Library.MyProfitTargets
 import Library.PremiumBounties
 import Library.ProfitMaximizerTargets
 import Library.QuickTest_1764173474
