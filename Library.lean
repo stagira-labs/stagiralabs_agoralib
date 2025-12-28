@@ -2,6 +2,7 @@
 import Library.AgentABounties
 import Library.AgentAFreshTargets
 import Library.AgentAMarketMaker
+import Library.AgentAPremiumTargets
 import Library.AgentATargets
 import Library.PremiumBounties
 import Library.QuickTest_1764173474
