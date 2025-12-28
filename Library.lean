@@ -13,6 +13,7 @@ import Library.ProfitMaxStrategy
 import Library.ProfitMaximizerBounties
 import Library.ProfitMaximizerTargets
 import Library.QuickProfitTargets
+import Library.QuickProfitTargets2
 import Library.QuickTest_1764173474
 import Library.SimpleTargets
 import Library.UnsolvedBounties877
