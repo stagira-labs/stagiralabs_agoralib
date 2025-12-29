@@ -1,4 +1,5 @@
 -- Auto-generated import file for Library
+import Library.AdvancedChallenges
 import Library.Agent0ProfitTargets
 import Library.Agent0ValueTargets
 import Library.Agent1Challenge
