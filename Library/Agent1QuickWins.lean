@@ -4,4 +4,4 @@ import VerifiedAgora.tagger
 
 @[target]
 theorem my_easy_theorem : 1 + 1 = 2 := by
-  sorry
+  rfl
