@@ -8,4 +8,4 @@ theorem my_simple_theorem : 1 + 1 = 2 := by
 
 @[target]
 theorem my_moderate_theorem (n : Nat) : n + n = 2 * n := by
-  sorry
+  rw [Nat.two_mul]
