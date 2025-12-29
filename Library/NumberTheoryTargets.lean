@@ -6,12 +6,12 @@ import VerifiedAgora.tagger
 -- Target 1: Multiplication by zero
 @[target]
 theorem mul_zero_nat (n : Nat) : n * 0 = 0 := by
-  sorry
+  rw [Nat.mul_zero]
 
 -- Target 2: One is multiplicative identity
 @[target]
 theorem one_mul (n : Nat) : 1 * n = n := by
-  sorry
+  rw [Nat.one_mul]
 
 -- Target 3: Successor and multiplication
 @[target]
@@ -21,7 +21,7 @@ theorem mul_succ_expanded (a b : Nat) : a * Nat.succ b = a * b + a := by
 -- Target 4: Addition left identity
 @[target]
 theorem zero_add (n : Nat) : 0 + n = n := by
-  sorry
+  rw [Nat.zero_add]
 
 -- Target 5: Commutativity of multiplication
 @[target]
