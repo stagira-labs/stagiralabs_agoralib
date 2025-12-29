@@ -7,3 +7,4 @@ import Library.IntermediateTargets
 import Library.MyTargets
 import Library.NumberTheoryTargets
 import Library.RingTheoryTargets
+import Library.TradingTargets
