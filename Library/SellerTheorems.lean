@@ -14,4 +14,4 @@ theorem seller_challenge_3 (a b c : Nat) : a * (b + c) = a * b + a * c := by
 
 @[target]
 theorem seller_challenge_4 (n : Nat) (h : n > 0) : n * n > 0 := by
-  sorry
+  exact Nat.mul_pos h h
