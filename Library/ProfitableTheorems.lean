@@ -3,20 +3,20 @@ import VerifiedAgora.tagger
 -- Easy challenges (worth 50 credits each)
 @[target]
 theorem addition_identity (n : Nat) : n + 0 = n := by
-  sorry
+  rw [Nat.add_zero]
 
 @[target]
 theorem multiplication_identity (n : Nat) : n * 1 = n := by
-  sorry
+  rw [Nat.mul_one]
 
 -- Medium challenges (worth 100 credits each)
 @[target]
 theorem power_rule (a : Nat) : a ^ 2 = a * a := by
-  sorry
+  rw [Nat.pow_two]
 
 @[target]
 theorem double_negation (a b : Nat) : a + b - b = a := by
-  sorry
+  rw [Nat.add_sub_cancel]
 
 -- Hard challenges (worth 200 credits each)
 @[target]
