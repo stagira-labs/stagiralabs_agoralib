@@ -46,7 +46,7 @@ theorem mul_two (n : Nat) : n * 2 = n + n := by
 -- Target 9: Addition with one
 @[target]
 theorem add_one (n : Nat) : n + 1 = Nat.succ n := by
-  sorry
+  rfl
 
 -- Target 10: Associativity of addition (variant)
 @[target]
