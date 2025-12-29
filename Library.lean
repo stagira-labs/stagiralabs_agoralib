@@ -1,4 +1,5 @@
 -- Auto-generated import file for Library
+import Library.Agent2MoreTargets
 import Library.Agent2ProfitTargets
 import Library.Agent2Targets
 import Library.AgentABounties
