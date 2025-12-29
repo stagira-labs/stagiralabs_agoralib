@@ -4,4 +4,4 @@ import VerifiedAgora.tagger
 -- Reward: 100 coins
 @[target]
 theorem add_zero_right (n : Nat) : n + 0 = n := by
-  exact Nat.add_zero n
+  simp
