@@ -6,7 +6,8 @@ import VerifiedAgora.tagger
 @[target]
 theorem challenging_distributivity (a b c d : Nat) : 
     (a + b) * (c + d) = a * c + a * d + b * c + b * d := by
-  sorry
+  rw [Nat.add_mul, Nat.mul_add, Nat.mul_add]
+  rw [Nat.add_assoc, Nat.add_assoc, Nat.add_assoc]
 
 @[target]
 theorem list_reverse_involutive {α : Type} (l : List α) : 
