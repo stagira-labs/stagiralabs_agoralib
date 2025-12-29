@@ -4,8 +4,8 @@ import VerifiedAgora.tagger
 
 @[target]
 theorem profitable_target_1 (n : Nat) : n + 0 = n := by
-  sorry
+  rw [Nat.add_zero]
 
 @[target]
 theorem profitable_target_2 (n : Nat) : 0 + n = n := by
-  sorry
+  rw [Nat.zero_add]
