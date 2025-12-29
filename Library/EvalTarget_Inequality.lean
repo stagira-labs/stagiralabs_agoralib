@@ -4,4 +4,4 @@ import VerifiedAgora.tagger
 -- Reward: 150 coins
 @[target]
 theorem nat_le_add_right (a b : Nat) : a ≤ a + b := by
-  omega
+  exact Nat.le_add_right a b
