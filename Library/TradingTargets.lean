@@ -5,24 +5,26 @@ import Library.Basic
 
 @[target]
 theorem nat_add_comm_basic (a b : Nat) : a + b = b + a := by
-  sorry
+  rw [Nat.add_comm]
 
 @[target]
 theorem nat_mul_assoc (a b c : Nat) : a * (b * c) = (a * b) * c := by
-  sorry
+  rw [Nat.mul_assoc]
 
 @[target]
 theorem nat_zero_mul (a : Nat) : 0 * a = 0 := by
-  sorry
+  rw [Nat.zero_mul]
 
 @[target]
 theorem nat_add_left_cancel (a b c : Nat) : a + b = a + c → b = c := by
-  sorry
+  intro h
+  exact Nat.add_left_cancel h
 
 @[target]
 theorem list_length_nil (α : Type) : List.length ([] : List α) = 0 := by
-  sorry
+  rfl
 
 @[target]
 theorem option_some_ne_none (α : Type) (a : α) : (some a) ≠ (none : Option α) := by
-  sorry
+  intro h
+  cases h
