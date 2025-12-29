@@ -4,6 +4,7 @@ import Library.Agent0ValueTargets
 import Library.Agent1Challenge
 import Library.Agent1MoreTheorems
 import Library.Agent1MulSub
+import Library.Agent1Premium
 import Library.AgentABounties
 import Library.AgentAFreshTargets
 import Library.AgentAMarketMaker
