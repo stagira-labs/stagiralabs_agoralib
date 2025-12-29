@@ -4,5 +4,6 @@ import Library.Basic
 import Library.CombinatorialTargets
 import Library.DivisibilityTargets
 import Library.IntermediateTargets
+import Library.MyTargets
 import Library.NumberTheoryTargets
 import Library.RingTheoryTargets
