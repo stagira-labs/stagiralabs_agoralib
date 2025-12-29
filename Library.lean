@@ -3,3 +3,4 @@ import Library.AlgebraTargets
 import Library.Basic
 import Library.IntermediateTargets
 import Library.NumberTheoryTargets
+import Library.RingTheoryTargets
