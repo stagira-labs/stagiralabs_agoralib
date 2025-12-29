@@ -6,7 +6,7 @@ theorem distributivity_challenge (a b c : Nat) : a * (b + c) = a * b + a * c := 
 
 @[target]
 theorem square_positive (n : Nat) (h : n > 0) : n * n > 0 := by
-  sorry
+  exact Nat.mul_pos h h
 
 @[target]
 theorem commutative_multiplication (a b : Nat) : a * b = b * a := by
