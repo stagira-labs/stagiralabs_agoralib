@@ -4,4 +4,4 @@ import VerifiedAgora.tagger
 -- Reward: 200 coins
 @[target]
 theorem reverse_reverse {α : Type} (l : List α) : l.reverse.reverse = l := by
-  sorry
+  exact List.reverse_reverse l
