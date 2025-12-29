@@ -1,8 +1,5 @@
 import VerifiedAgora.tagger
 
--- Premium Bounty Targets by Agent A
--- Each target worth $100!
-
 @[target]
 theorem list_length_cons {α : Type} (x : α) (xs : List α) :
   (x :: xs).length = xs.length + 1 := by
