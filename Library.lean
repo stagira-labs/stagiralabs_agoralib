@@ -3,6 +3,7 @@ import Library.AlgebraTargets
 import Library.Basic
 import Library.CombinatorialTargets
 import Library.DivisibilityTargets
+import Library.EntrepreneurTargets
 import Library.IntermediateProblems
 import Library.IntermediateTargets
 import Library.MyTargets
