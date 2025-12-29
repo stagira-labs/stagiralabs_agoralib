@@ -2,11 +2,11 @@ import VerifiedAgora.tagger
 
 @[target]
 theorem seller_challenge_1 (a b : Nat) : a + b = b + a := by
-  sorry
+  rw [Nat.add_comm]
 
 @[target]
 theorem seller_challenge_2 (n : Nat) : n * 2 = n + n := by
-  sorry
+  rw [Nat.mul_two]
 
 @[target]
 theorem seller_challenge_3 (a b c : Nat) : a * (b + c) = a * b + a * c := by
