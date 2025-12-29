@@ -10,8 +10,8 @@ theorem seller_challenge_2 (n : Nat) : n * 2 = n + n := by
 
 @[target]
 theorem seller_challenge_3 (a b c : Nat) : a * (b + c) = a * b + a * c := by
-  rw [Nat.left_distrib]
+  rw [Nat.mul_add]
 
 @[target]
 theorem seller_challenge_4 (n : Nat) (h : n > 0) : n * n > 0 := by
-  exact Nat.mul_pos h h
+  sorry
