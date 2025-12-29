@@ -11,7 +11,7 @@ theorem mul_succ (a b : Nat) : a * (b + 1) = a * b + a := by
 -- Target 2: Addition commutativity
 @[target]
 theorem add_comm_custom (a b : Nat) : a + b = b + a := by
-  sorry
+  rw [Nat.add_comm]
 
 -- Target 3: Multiplication associativity
 @[target]
@@ -21,12 +21,14 @@ theorem mul_assoc_custom (a b c : Nat) : (a * b) * c = a * (b * c) := by
 -- Target 4: Zero multiplication
 @[target]
 theorem zero_mul (a : Nat) : 0 * a = 0 := by
-  sorry
+  induction a with
+  | zero => rfl
+  | succ a ih => simp [Nat.mul_succ, ih]
 
 -- Target 5: Successor addition
 @[target]
 theorem succ_add (a b : Nat) : (a + 1) + b = (a + b) + 1 := by
-  sorry
+  rw [Nat.add_assoc, Nat.add_comm 1 b, Nat.add_assoc]
 
 -- Target 6: Double is addition
 @[target]
