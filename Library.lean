@@ -1,5 +1,6 @@
 -- Auto-generated import file for Library
 import Library.Agent0ProfitTargets
+import Library.Agent0ValueTargets
 import Library.Agent1Challenge
 import Library.Agent1MoreTheorems
 import Library.Agent1MulSub
