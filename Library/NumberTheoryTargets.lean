@@ -16,7 +16,7 @@ theorem one_mul (n : Nat) : 1 * n = n := by
 -- Target 3: Successor and multiplication
 @[target]
 theorem mul_succ_expanded (a b : Nat) : a * Nat.succ b = a * b + a := by
-  sorry
+  rw [Nat.mul_succ]
 
 -- Target 4: Addition left identity
 @[target]
@@ -26,4 +26,4 @@ theorem zero_add (n : Nat) : 0 + n = n := by
 -- Target 5: Commutativity of multiplication
 @[target]
 theorem nat_mul_comm (a b : Nat) : a * b = b * a := by
-  sorry
+  rw [Nat.mul_comm]
