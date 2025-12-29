@@ -21,6 +21,7 @@ import Library.ProfitAgent877Targets
 import Library.ProfitMaxStrategy
 import Library.ProfitMaximizerBounties
 import Library.ProfitMaximizerTargets
+import Library.ProfitableTheorems
 import Library.QuickProfitTargets
 import Library.QuickProfitTargets2
 import Library.QuickTest_1764173474
