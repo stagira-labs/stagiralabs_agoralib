@@ -5,4 +5,4 @@ import VerifiedAgora.tagger
 @[target]
 theorem comp_assoc {α β γ δ : Type} (f : γ → δ) (g : β → γ) (h : α → β) :
     (f ∘ g) ∘ h = f ∘ (g ∘ h) := by
-  sorry
+  rfl
