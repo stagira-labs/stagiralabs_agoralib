@@ -10,6 +10,7 @@ import Library.AgentAFreshTargets
 import Library.AgentAMarketMaker
 import Library.AgentAPremiumTargets
 import Library.AgentATargets
+import Library.FibonacciChallenge
 import Library.MyProfitTargets
 import Library.PremiumBounties
 import Library.PremiumChallenges
