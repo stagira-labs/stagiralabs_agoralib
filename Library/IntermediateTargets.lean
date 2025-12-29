@@ -6,7 +6,7 @@ import VerifiedAgora.tagger
 -- Easy but valuable
 @[target]
 theorem nat_add_zero (n : Nat) : n + 0 = n := by
-  sorry
+  rfl
 
 -- Moderate
 @[target]
