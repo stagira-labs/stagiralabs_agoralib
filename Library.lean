@@ -10,4 +10,5 @@ import Library.MyTargets
 import Library.NumberTheoryTargets
 import Library.RingTheoryTargets
 import Library.SkilledSolverTargets
+import Library.TradingOpportunities
 import Library.TradingTargets
