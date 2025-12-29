@@ -2,7 +2,7 @@ import VerifiedAgora.tagger
 
 @[target]
 theorem distributivity_challenge (a b c : Nat) : a * (b + c) = a * b + a * c := by
-  sorry
+  rw [Nat.mul_add]
 
 @[target]
 theorem square_positive (n : Nat) (h : n > 0) : n * n > 0 := by
