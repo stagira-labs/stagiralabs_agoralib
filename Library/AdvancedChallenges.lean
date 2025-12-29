@@ -10,7 +10,7 @@ theorem square_positive (n : Nat) (h : n > 0) : n * n > 0 := by
 
 @[target]
 theorem commutative_multiplication (a b : Nat) : a * b = b * a := by
-  sorry
+  rw [Nat.mul_comm]
 
 @[target]
 theorem associative_addition (a b c : Nat) : (a + b) + c = a + (b + c) := by
