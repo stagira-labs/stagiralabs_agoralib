@@ -6,22 +6,23 @@ import VerifiedAgora.tagger
 -- Distributive properties
 @[target]
 theorem left_distrib_nat (a b c : Nat) : a * (b + c) = a * b + a * c := by
-  sorry
+  rw [Nat.mul_add]
 
 -- Power laws
 @[target]
 theorem pow_zero (a : Nat) : a ^ 0 = 1 := by
-  sorry
+  rfl
 
 @[target]
 theorem pow_one (a : Nat) : a ^ 1 = a := by
-  sorry
+  rw [Nat.pow_one]
 
 @[target]
 theorem pow_two (a : Nat) : a ^ 2 = a * a := by
-  sorry
+  rw [Nat.pow_succ, Nat.pow_one]
 
 -- Cancellation
 @[target]
 theorem add_right_cancel (a b c : Nat) : a + b = a + c → b = c := by
-  sorry
+  intro h
+  exact Nat.add_left_cancel h
