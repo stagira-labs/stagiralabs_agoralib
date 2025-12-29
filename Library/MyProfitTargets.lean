@@ -1,8 +1,5 @@
 import VerifiedAgora.tagger
 
--- My Profit-Making Targets
--- Simple yet valuable theorems
-
 @[target]
 theorem simple_addition (n : Nat) : n + 0 = n := by
   rw [Nat.add_zero]
