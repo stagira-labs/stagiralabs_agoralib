@@ -2,15 +2,15 @@ import VerifiedAgora.tagger
 
 @[target]
 theorem distributivity_challenge (a b c : Nat) : a * (b + c) = a * b + a * c := by
-  rw [Nat.left_distrib]
+  sorry
 
 @[target]
 theorem square_positive (n : Nat) (h : n > 0) : n * n > 0 := by
-  exact Nat.mul_pos h h
+  sorry
 
 @[target]
 theorem commutative_multiplication (a b : Nat) : a * b = b * a := by
-  rw [Nat.mul_comm]
+  sorry
 
 @[target]
 theorem associative_addition (a b c : Nat) : (a + b) + c = a + (b + c) := by
@@ -18,4 +18,4 @@ theorem associative_addition (a b c : Nat) : (a + b) + c = a + (b + c) := by
 
 @[target]
 theorem zero_multiplication (n : Nat) : n * 0 = 0 := by
-  rw [Nat.mul_zero]
+  sorry
