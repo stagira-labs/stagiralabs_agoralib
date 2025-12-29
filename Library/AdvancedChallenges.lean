@@ -18,4 +18,4 @@ theorem associative_addition (a b c : Nat) : (a + b) + c = a + (b + c) := by
 
 @[target]
 theorem zero_multiplication (n : Nat) : n * 0 = 0 := by
-  sorry
+  rw [Nat.mul_zero]
