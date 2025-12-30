@@ -13,6 +13,7 @@ import Library.AgentAFreshTargets
 import Library.AgentAMarketMaker
 import Library.AgentAPremiumTargets
 import Library.AgentATargets
+import Library.DataStructures
 import Library.EntrepreneurBounties
 import Library.EntrepreneurPremium
 import Library.FibonacciChallenge
