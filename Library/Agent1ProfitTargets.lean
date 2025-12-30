@@ -5,12 +5,12 @@ import VerifiedAgora.tagger
 
 @[target]
 theorem simple_nat_fact (n : Nat) : n + 0 = n := by
-  sorry
+  rfl
 
 @[target]
 theorem simple_mul_fact (n : Nat) : n * 1 = n := by
-  sorry
+  rw [Nat.mul_one]
 
 @[target]
 theorem add_commutes (a b : Nat) : a + b = b + a := by
-  sorry
+  rw [Nat.add_comm]
