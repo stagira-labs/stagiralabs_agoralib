@@ -1,4 +1,5 @@
 -- Auto-generated import file for Library
+import Library.Agent0Strategy
 import Library.Agent1Bounties
 import Library.Agent1ProfitTargets
 import Library.Agent1QuickWins
