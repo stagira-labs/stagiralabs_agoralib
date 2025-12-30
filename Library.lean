@@ -50,6 +50,7 @@ import Library.QuickWinsBatch1
 import Library.SellerTheorems
 import Library.SimpleTargets
 import Library.StrategicBounties001
+import Library.StrategicBounties002
 import Library.UltraPremiumTargets
 import Library.UnsolvedBounties877
 import Library.UnsolvedTest
