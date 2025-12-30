@@ -16,6 +16,7 @@ import Library.AgentAMarketMaker
 import Library.AgentAPremiumTargets
 import Library.AgentATargets
 import Library.DataStructures
+import Library.DataStructures2
 import Library.EntrepreneurBounties
 import Library.EntrepreneurPremium
 import Library.FibonacciChallenge
