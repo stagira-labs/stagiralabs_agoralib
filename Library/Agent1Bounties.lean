@@ -8,8 +8,8 @@ theorem bounty_add_zero (n : Nat) : n + 0 = n := by
 
 @[target]
 theorem bounty_zero_add (n : Nat) : 0 + n = n := by
-  sorry
+  exact Nat.zero_add n
 
 @[target]
 theorem bounty_mul_one (n : Nat) : n * 1 = n := by
-  sorry
+  exact Nat.mul_one n
