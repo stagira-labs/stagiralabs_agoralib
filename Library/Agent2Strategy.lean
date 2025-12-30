@@ -11,7 +11,7 @@ theorem list_reverse_append {α : Type} (xs ys : List α) :
 @[target]
 theorem nat_mul_add_distrib (a b c : Nat) : 
   a * (b + c) = a * b + a * c := by
-  sorry
+  exact Nat.mul_add a b c
 
 @[target]
 theorem list_length_reverse {α : Type} (xs : List α) : 
