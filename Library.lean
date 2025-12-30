@@ -11,6 +11,7 @@ import Library.Agent1MoreTheorems
 import Library.Agent1MulSub
 import Library.Agent1NewTargets
 import Library.Agent1Premium
+import Library.Agent1ProfitTargets
 import Library.Agent1Solutions
 import Library.AgentABounties
 import Library.AgentAFreshTargets
