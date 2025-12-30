@@ -4,12 +4,12 @@ import VerifiedAgora.tagger
 
 @[target]
 theorem target_a (n : Nat) : n + 0 = n := by
-  sorry
+  rfl
 
 @[target]
 theorem target_b (n : Nat) : 0 + n = n := by
-  sorry
+  simp
 
 @[target]
 theorem target_c (a b : Nat) : a + b = b + a := by
-  sorry
+  simp [Nat.add_comm]
