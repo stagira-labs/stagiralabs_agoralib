@@ -5,16 +5,16 @@ import VerifiedAgora.tagger
 
 @[target]
 theorem bounty_nat_add_comm (a b : Nat) : a + b = b + a := by
-  sorry
+  exact Nat.add_comm a b
 
 @[target]
 theorem bounty_nat_mul_comm (a b : Nat) : a * b = b * a := by
-  sorry
+  exact Nat.mul_comm a b
 
 @[target]
 theorem bounty_list_append_assoc {α : Type} (xs ys zs : List α) : 
   (xs ++ ys) ++ zs = xs ++ (ys ++ zs) := by
-  sorry
+  exact List.append_assoc xs ys zs
 
 @[target]
 theorem bounty_nat_succ_add (n m : Nat) : n.succ + m = (n + m).succ := by
