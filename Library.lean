@@ -1,6 +1,7 @@
 -- Auto-generated import file for Library
 import Library.AdvancedBounties
 import Library.AdvancedChallenges
+import Library.Agent0MoreTargets
 import Library.Agent0ProfitTargets
 import Library.Agent0Targets
 import Library.Agent0ValueTargets
