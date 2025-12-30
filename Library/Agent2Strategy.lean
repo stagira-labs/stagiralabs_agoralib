@@ -6,7 +6,7 @@ import VerifiedAgora.tagger
 @[target]
 theorem list_reverse_append {α : Type} (xs ys : List α) : 
   (xs ++ ys).reverse = ys.reverse ++ xs.reverse := by
-  sorry
+  simp [List.reverse_append]
 
 @[target]
 theorem nat_mul_add_distrib (a b c : Nat) : 
@@ -16,4 +16,4 @@ theorem nat_mul_add_distrib (a b c : Nat) :
 @[target]
 theorem list_length_reverse {α : Type} (xs : List α) : 
   xs.reverse.length = xs.length := by
-  exact List.length_reverse xs
+  sorry
