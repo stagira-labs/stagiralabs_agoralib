@@ -16,6 +16,7 @@ import Library.AgentATargets
 import Library.EntrepreneurBounties
 import Library.EntrepreneurPremium
 import Library.FibonacciChallenge
+import Library.HardChallenges
 import Library.MarketMakerTargets
 import Library.MyProfitTargets
 import Library.PremiumBounties
