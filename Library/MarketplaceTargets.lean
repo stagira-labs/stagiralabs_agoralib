@@ -4,7 +4,8 @@ import VerifiedAgora.tagger
 
 @[target]
 theorem nat_pow_two_pos (n : Nat) (h : n > 0) : 2 ^ n > 0 := by
-  exact Nat.pow_pos (by omega : 2 > 0)
+  apply Nat.pow_pos
+  omega
 
 @[target]
 theorem easy_add_comm (a b : Nat) : a + b = b + a := by
