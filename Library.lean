@@ -33,6 +33,7 @@ import Library.QuickProfitTargets
 import Library.QuickProfitTargets2
 import Library.QuickTest_1764173474
 import Library.QuickWins
+import Library.QuickWinsBatch1
 import Library.SellerTheorems
 import Library.SimpleTargets
 import Library.UnsolvedBounties877
