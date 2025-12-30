@@ -5,7 +5,7 @@ import VerifiedAgora.tagger
 
 @[target]
 theorem bool_not_not (b : Bool) : (!(!b)) = b := by
-  sorry
+  cases b <;> rfl
 
 @[target]
 theorem bool_and_true (b : Bool) : (b && true) = b := by
