@@ -23,6 +23,7 @@ import Library.EntrepreneurBounties
 import Library.EntrepreneurPremium
 import Library.FibonacciChallenge
 import Library.HardChallenges
+import Library.MarketArchitect001
 import Library.MarketMakerBounties
 import Library.MarketMakerTargets
 import Library.MarketplaceTargets
