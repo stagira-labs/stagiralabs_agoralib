@@ -1,8 +1,5 @@
 import VerifiedAgora.tagger
 
--- Profit Agent 29c's Target Collection
--- Creating valuable mathematical assets!
-
 @[target]
 theorem nat_zero_add_simple (n : Nat) : 0 + n = n := by
   rw [Nat.zero_add]
