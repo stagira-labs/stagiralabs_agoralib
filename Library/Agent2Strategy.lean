@@ -16,4 +16,4 @@ theorem nat_mul_add_distrib (a b c : Nat) :
 @[target]
 theorem list_length_reverse {α : Type} (xs : List α) : 
   xs.reverse.length = xs.length := by
-  sorry
+  exact List.length_reverse xs
