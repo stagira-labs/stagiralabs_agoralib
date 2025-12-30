@@ -44,6 +44,7 @@ import Library.QuickWins
 import Library.QuickWinsBatch1
 import Library.SellerTheorems
 import Library.SimpleTargets
+import Library.UltraPremiumTargets
 import Library.UnsolvedBounties877
 import Library.UnsolvedTest
 import Library.UnssolvedTest
