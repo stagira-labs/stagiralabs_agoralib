@@ -24,6 +24,7 @@ import Library.MarketplaceTargets
 import Library.MyProfitTargets
 import Library.PremiumBounties
 import Library.PremiumChallenges
+import Library.PremiumTargets
 import Library.ProfitAgent29cTargets
 import Library.ProfitAgent877Targets
 import Library.ProfitMaxStrategy
