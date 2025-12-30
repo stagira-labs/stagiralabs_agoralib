@@ -5,18 +5,18 @@ import VerifiedAgora.tagger
 
 @[target]
 theorem premium_nat_zero_mul (n : Nat) : 0 * n = 0 := by
-  sorry
+  exact Nat.zero_mul n
 
 @[target]
 theorem premium_list_cons_append {α : Type} (x : α) (xs ys : List α) :
   (x :: xs) ++ ys = x :: (xs ++ ys) := by
-  sorry
+  rfl
 
 @[target]
 theorem premium_nat_succ_add (n m : Nat) : Nat.succ n + m = Nat.succ (n + m) := by
-  sorry
+  exact Nat.succ_add n m
 
 @[target]
 theorem premium_option_map_some {α β : Type} (f : α → β) (x : α) :
   (some x).map f = some (f x) := by
-  sorry
+  rfl
