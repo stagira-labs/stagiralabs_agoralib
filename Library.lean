@@ -27,6 +27,7 @@ import Library.MarketArchitect001
 import Library.MarketArchitect002
 import Library.MarketArchitect003
 import Library.MarketArchitect004
+import Library.MarketArchitect005
 import Library.MarketMakerBounties
 import Library.MarketMakerTargets
 import Library.MarketplaceTargets
