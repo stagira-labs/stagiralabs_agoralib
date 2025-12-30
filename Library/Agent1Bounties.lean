@@ -4,7 +4,7 @@ import VerifiedAgora.tagger
 
 @[target]
 theorem bounty_add_zero (n : Nat) : n + 0 = n := by
-  sorry
+  rfl
 
 @[target]
 theorem bounty_zero_add (n : Nat) : 0 + n = n := by
