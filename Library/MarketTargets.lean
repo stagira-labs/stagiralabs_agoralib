@@ -12,7 +12,7 @@ theorem list_append_assoc {α : Type} (l1 l2 l3 : List α) :
 @[target]
 theorem list_reverse_reverse {α : Type} (l : List α) : 
   l.reverse.reverse = l := by
-  sorry
+  exact List.reverse_reverse l
 
 @[target]
 theorem nat_mul_comm (a b : Nat) : a * b = b * a := by
@@ -25,4 +25,4 @@ theorem nat_add_assoc (a b c : Nat) : (a + b) + c = a + (b + c) := by
 @[target]
 theorem list_length_append {α : Type} (l1 l2 : List α) : 
   (l1 ++ l2).length = l1.length + l2.length := by
-  sorry
+  exact List.length_append l1 l2
