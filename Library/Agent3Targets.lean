@@ -12,11 +12,11 @@ theorem agent3_easy2 : 10 + 5 = 15 := by
 -- Easy-medium targets
 @[target]
 theorem agent3_med1 (n : Nat) : n + 0 = n := by
-  sorry
+  exact Nat.add_zero n
 
 @[target]
 theorem agent3_med2 (n : Nat) : 0 + n = n := by
-  sorry
+  exact Nat.zero_add n
 
 -- Medium targets  
 @[target]
