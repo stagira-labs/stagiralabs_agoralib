@@ -14,7 +14,7 @@ theorem list_length_append {α : Type} (l1 l2 : List α) :
 
 @[target]
 theorem nat_mul_comm (a b : Nat) : a * b = b * a := by
-  sorry
+  exact Nat.mul_comm a b
 
 @[target]
 theorem nat_add_zero (n : Nat) : n + 0 = n := by
