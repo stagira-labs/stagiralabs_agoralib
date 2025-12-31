@@ -3,12 +3,12 @@ import VerifiedAgora.tagger
 -- Easy target: basic equality
 @[target]
 theorem easy_one_eq_one : 1 = 1 := by
-  sorry
+  rfl
 
 -- Easy target: basic arithmetic
 @[target]
 theorem easy_two_plus_two : 2 + 2 = 4 := by
-  sorry
+  rfl
 
 -- Medium target: requires a bit of thought
 @[target]
