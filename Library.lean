@@ -1,3 +1,2 @@
 -- Auto-generated import file for Library
-import Library.target_tagging_demo
 import Library.math_demo

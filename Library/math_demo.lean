@@ -7,7 +7,7 @@ import Mathlib.CategoryTheory.Functor.Hom
 import Mathlib.CategoryTheory.Products.Basic
 import Mathlib.Data.ULift
 import Mathlib.Logic.Function.ULift
-
+import VerifiedAgora.tagger
 /-!
 # The Yoneda embedding
 
@@ -585,24 +585,21 @@ def curriedYonedaLemma' {C : Type u₁} [SmallCategory C] :
     dsimp [yonedaEquiv]
     simp [← FunctorToTypes.naturality]))
 
+@[target]
 lemma isIso_of_yoneda_map_bijective {X Y : C} (f : X ⟶ Y)
     (hf : ∀ (T : C), Function.Bijective (fun (x : T ⟶ X) => x ≫ f)) :
     IsIso f := by
-  obtain ⟨g, hg : g ≫ f = 𝟙 Y⟩ := (hf Y).2 (𝟙 Y)
-  exact ⟨g, (hf _).1 (by aesop_cat), hg⟩
+  sorry
 
+@[target]
 lemma isIso_iff_yoneda_map_bijective {X Y : C} (f : X ⟶ Y) :
     IsIso f ↔ (∀ (T : C), Function.Bijective (fun (x : T ⟶ X) => x ≫ f)) := by
-  refine ⟨fun _ ↦ ?_, fun hf ↦ isIso_of_yoneda_map_bijective f hf⟩
-  have : IsIso (yoneda.map f) := inferInstance
-  intro T
-  rw [← isIso_iff_bijective]
-  exact inferInstanceAs (IsIso ((yoneda.map f).app _))
+  sorry
 
+@[target]
 lemma isIso_iff_isIso_yoneda_map {X Y : C} (f : X ⟶ Y) :
     IsIso f ↔ ∀ c : C, IsIso ((yoneda.map f).app ⟨c⟩) := by
-  rw [isIso_iff_yoneda_map_bijective]
-  exact forall_congr' fun _ ↦ (isIso_iff_bijective _).symm
+  sorry
 
 end YonedaLemma
 
@@ -632,30 +629,31 @@ theorem coyonedaEquiv_symm_app_apply {X : C} {F : C ⥤ Type v₁} (x : F.obj X)
     (f : X ⟶ Y) : (coyonedaEquiv.symm x).app Y f = F.map f x :=
   rfl
 
+@[target]
 lemma coyonedaEquiv_naturality {X Y : C} {F : C ⥤ Type v₁} (f : coyoneda.obj (op X) ⟶ F)
     (g : X ⟶ Y) : F.map g (coyonedaEquiv f) = coyonedaEquiv (coyoneda.map g.op ≫ f) := by
-  change (f.app X ≫ F.map g) (𝟙 X) = f.app Y (g ≫ 𝟙 Y)
-  rw [← f.naturality]
-  dsimp
-  simp
+  sorry
 
+@[target]
 lemma coyonedaEquiv_comp {X : C} {F G : C ⥤ Type v₁} (α : coyoneda.obj (op X) ⟶ F) (β : F ⟶ G) :
     coyonedaEquiv (α ≫ β) = β.app _ (coyonedaEquiv α) := by
-  rfl
+  sorry
 
+@[target]
 lemma coyonedaEquiv_coyoneda_map {X Y : C} (f : X ⟶ Y) :
     coyonedaEquiv (coyoneda.map f.op) = f := by
-  rw [coyonedaEquiv_apply]
-  simp
+  sorry
 
+
+@[target]
 lemma map_coyonedaEquiv {X Y : C} {F : C ⥤ Type v₁} (f : coyoneda.obj (op X) ⟶ F)
     (g : X ⟶ Y) : F.map g (coyonedaEquiv f) = f.app Y g := by
-  rw [coyonedaEquiv_naturality, coyonedaEquiv_comp, coyonedaEquiv_coyoneda_map]
+  sorry
 
+@[target]
 lemma coyonedaEquiv_symm_map {X Y : C} (f : X ⟶ Y) {F : C ⥤ Type v₁} (t : F.obj X) :
     coyonedaEquiv.symm (F.map f t) = coyoneda.map f.op ≫ coyonedaEquiv.symm t := by
-  obtain ⟨u, rfl⟩ := coyonedaEquiv.surjective t
-  simp [coyonedaEquiv_naturality u f]
+  sorry
 
 variable (C)
 
@@ -731,6 +729,7 @@ def curriedCoyonedaLemma {C : Type u₁} [SmallCategory C] :
     simp [coyonedaEquiv, ← FunctorToTypes.naturality])
 
 /-- The curried version of the Coyoneda lemma. -/
+@[target]
 def largeCurriedCoyonedaLemma {C : Type u₁} [Category.{v₁} C] :
     (coyoneda.rightOp ⋙ coyoneda) ≅
       evaluation C (Type v₁) ⋙ (whiskeringRight _ _ _).obj uliftFunctor.{u₁} :=
@@ -749,6 +748,7 @@ def largeCurriedCoyonedaLemma {C : Type u₁} [Category.{v₁} C] :
       simpa using (coyonedaEquiv_naturality _ _).symm)
 
 /-- Version of the Coyoneda lemma where the presheaf is fixed but the argument varies. -/
+@[target]
 def coyonedaCompYonedaObj {C : Type u₁} [Category.{v₁} C] (P : C ⥤ Type v₁) :
     coyoneda.rightOp ⋙ yoneda.obj P ≅ P ⋙ uliftFunctor.{u₁} :=
   isoWhiskerRight largeCurriedCoyonedaLemma ((evaluation _ _).obj P)
