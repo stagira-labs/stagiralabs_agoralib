@@ -3,7 +3,7 @@ import VerifiedAgora.tagger
 -- Easy target: basic reflexivity
 @[target]
 theorem easy_refl (n : Nat) : n = n := by
-  sorry
+  rfl
 
 -- Medium target: list append associativity  
 @[target]
