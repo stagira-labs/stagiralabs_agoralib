@@ -5,7 +5,7 @@ import VerifiedAgora.tagger
 @[target]
 theorem list_append_assoc {α : Type} (l1 l2 l3 : List α) : 
   (l1 ++ l2) ++ l3 = l1 ++ (l2 ++ l3) := by
-  sorry
+  exact List.append_assoc l1 l2 l3
 
 @[target]
 theorem list_length_append {α : Type} (l1 l2 : List α) : 
