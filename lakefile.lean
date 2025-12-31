@@ -22,10 +22,6 @@ require VerifiedAgora from git
 @[default_target]
 lean_lib Library where
 
-@[default_target]
-lean_lib Targets where
-
-
 lean_lib Utils where
 
 @[default_target]
