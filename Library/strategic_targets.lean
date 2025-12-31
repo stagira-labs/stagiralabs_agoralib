@@ -13,7 +13,7 @@ theorem easy_two_plus_two : 2 + 2 = 4 := by
 -- Medium target: requires a bit of thought
 @[target]
 theorem medium_nat_mul_comm (a b : Nat) : a * b = b * a := by
-  sorry
+  exact Nat.mul_comm a b
 
 -- Medium-hard target: list append associativity
 @[target]
