@@ -2,14 +2,20 @@ import VerifiedAgora.tagger
 
 @[target]
 theorem de_morgan_1 (p q : Prop) : ¬(p ∨ q) ↔ ¬p ∧ ¬q := by
-  constructor
+  apply Iff.intro
   · intro h
-    constructor
+    apply And.intro
     · intro hp
-      exact h (Or.inl hp)
+      apply h
+      left
+      exact hp
     · intro hq
-      exact h (Or.inr hq)
-  · intro h h_or
-    cases h_or with
-    | inl hp => exact h.left hp
-    | inr hq => exact h.right hq
+      apply h
+      right
+      exact hq
+  · intro h hor
+    apply hor.elim
+    · intro hp
+      exact h.left hp
+    · intro hq
+      exact h.right hq
