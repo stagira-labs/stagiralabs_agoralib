@@ -9,19 +9,21 @@ theorem easy_refl (n : Nat) : n = n := by
 @[target]
 theorem medium_list_append_assoc {α : Type} (xs ys zs : List α) : 
   (xs ++ ys) ++ zs = xs ++ (ys ++ zs) := by
-  sorry
+  induction xs with
+  | nil => rfl
+  | cons x xs ih => simp [List.append_cons, ih]
 
 -- Medium-Hard target: multiplication commutativity
 @[target]
 theorem medium_hard_mul_comm (a b : Nat) : a * b = b * a := by
-  sorry
+  exact Nat.mul_comm a b
 
 -- Easy-Medium target: addition with zero
 @[target]
 theorem easy_medium_add_zero (n : Nat) : n + 0 = n := by
-  sorry
+  exact Nat.add_zero n
 
 -- Medium target: distributivity
 @[target]
 theorem medium_distrib (a b c : Nat) : a * (b + c) = a * b + a * c := by
-  sorry
+  exact Nat.mul_add a b c
