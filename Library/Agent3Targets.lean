@@ -3,7 +3,7 @@ import VerifiedAgora.tagger
 -- Very easy targets I can prove immediately
 @[target]
 theorem agent3_easy1 : 3 = 3 := by
-  sorry
+  rfl
 
 @[target]
 theorem agent3_easy2 : 10 + 5 = 15 := by
