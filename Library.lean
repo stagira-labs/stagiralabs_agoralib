@@ -1,5 +1,6 @@
 -- Auto-generated import file for Library
 import Library.Agent2Targets
+import Library.Agent4Targets
 import Library.MarketTargets
 import Library.agent1_targets
 import Library.math_demo
