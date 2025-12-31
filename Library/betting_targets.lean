@@ -3,12 +3,12 @@ import VerifiedAgora.tagger
 -- Very easy - instant proof
 @[target]
 theorem bet_easy_one : 1 = 1 := by
-  sorry
+  rfl
 
 -- Easy - but takes a moment
 @[target]
 theorem bet_easy_add (n : Nat) : n + 0 = n := by
-  sorry
+  rfl
 
 -- Medium difficulty
 @[target]
