@@ -730,22 +730,37 @@ def curriedCoyonedaLemma {C : Type u₁} [SmallCategory C] :
 
 /-- The curried version of the Coyoneda lemma. -/
 @[target]
+lemma largeCurriedCoyonedaLemma_proof_inner {C : Type u₁} [Category.{v₁} C] (X : C) {Y Z : C ⥤ Type v₁} (f : Y ⟶ Z) :
+    ((coyoneda.rightOp ⋙ coyoneda).obj X).map f ≫ (Equiv.toIso <| coyonedaEquiv.trans Equiv.ulift.symm).hom =
+    (Equiv.toIso <| coyonedaEquiv.trans Equiv.ulift.symm).hom ≫ ((evaluation C (Type v₁) ⋙ (whiskeringRight _ _ _).obj uliftFunctor.{u₁}).obj X).map f := by
+  dsimp
+  ext g
+  -- The definitional equality allows exact matching after ext implicitly peels ULift
+  exact coyonedaEquiv_comp g f
+
+@[target]
+def largeCurriedCoyonedaLemma_iso {C : Type u₁} [Category.{v₁} C] (X : C) :
+    (coyoneda.rightOp ⋙ coyoneda).obj X ≅ (evaluation C (Type v₁) ⋙ (whiskeringRight _ _ _).obj uliftFunctor.{u₁}).obj X :=
+  NatIso.ofComponents
+    (fun _ => Equiv.toIso <| coyonedaEquiv.trans Equiv.ulift.symm)
+    (largeCurriedCoyonedaLemma_proof_inner X)
+
+@[target]
+lemma largeCurriedCoyonedaLemma_proof_outer {C : Type u₁} [Category.{v₁} C] {Y Z : C} (f : Y ⟶ Z) :
+    (coyoneda.rightOp ⋙ coyoneda).map f ≫ (largeCurriedCoyonedaLemma_iso Z).hom =
+    (largeCurriedCoyonedaLemma_iso Y).hom ≫ (evaluation C (Type v₁) ⋙ (whiskeringRight _ _ _).obj uliftFunctor.{u₁}).map f := by
+  ext F g
+  rw [← ULift.down_inj]
+  simpa using (coyonedaEquiv_naturality _ _).symm
+
+/-- The curried version of the Yoneda lemma. -/
+@[target]
 def largeCurriedCoyonedaLemma {C : Type u₁} [Category.{v₁} C] :
-    (coyoneda.rightOp ⋙ coyoneda) ≅
+    coyoneda.rightOp ⋙ coyoneda ≅
       evaluation C (Type v₁) ⋙ (whiskeringRight _ _ _).obj uliftFunctor.{u₁} :=
   NatIso.ofComponents
-    (fun X => NatIso.ofComponents
-      (fun _ => Equiv.toIso <| coyonedaEquiv.trans Equiv.ulift.symm)
-      (by
-        intros Y Z f
-        ext g
-        rw [← ULift.down_inj]
-        simpa using coyonedaEquiv_comp _ _))
-    (by
-      intro Y Z f
-      ext F g
-      rw [← ULift.down_inj]
-      simpa using (coyonedaEquiv_naturality _ _).symm)
+    (largeCurriedCoyonedaLemma_iso)
+    (largeCurriedCoyonedaLemma_proof_outer)
 
 /-- Version of the Coyoneda lemma where the presheaf is fixed but the argument varies. -/
 @[target]
