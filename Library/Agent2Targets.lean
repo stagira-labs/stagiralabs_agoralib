@@ -22,4 +22,4 @@ theorem nat_add_zero (n : Nat) : n + 0 = n := by
 
 @[target]
 theorem simple_eq : 1 + 1 = 2 := by
-  sorry
+  rfl
