@@ -11,7 +11,7 @@ theorem list_append_assoc {α : Type} (l1 l2 l3 : List α) :
   (l1 ++ l2) ++ l3 = l1 ++ (l2 ++ l3) := by
   induction l1 with
   | nil => rfl
-  | cons h t ih => simp [List.append_cons, ih]
+  | cons head tail ih => simp [List.append_cons, ih]
 
 -- Medium target - basic arithmetic
 @[target]
@@ -23,10 +23,11 @@ theorem nat_mul_comm (a b : Nat) : a * b = b * a := by
 theorem list_reverse_append {α : Type} (l1 l2 : List α) :
   (l1 ++ l2).reverse = l2.reverse ++ l1.reverse := by
   induction l1 with
-  | nil => simp
-  | cons h t ih => simp [ih, List.append_assoc]
+  | nil => simp [List.append_nil]
+  | cons head tail ih => 
+    simp [List.reverse_cons, List.append_assoc, ih]
 
 -- Harder target - requires induction
 @[target]
 theorem nat_add_assoc (a b c : Nat) : (a + b) + c = a + (b + c) := by
-  exact Nat.add_assoc a b c
+  sorry
