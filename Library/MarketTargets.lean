@@ -3,7 +3,7 @@ import VerifiedAgora.tagger
 -- Easy target - trivial
 @[target]
 theorem easy_reflexivity : 5 = 5 := by
-  sorry
+  rfl
 
 -- Medium target - requires some thought
 @[target]
