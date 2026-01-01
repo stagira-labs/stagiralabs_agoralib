@@ -2,7 +2,7 @@ import VerifiedAgora.tagger
 
 @[target]
 theorem easy_reflexivity : 42 = 42 := by
-  sorry
+  rfl
 
 @[target]
 theorem medium_nat_add (n m : Nat) : n + m = m + n := by
