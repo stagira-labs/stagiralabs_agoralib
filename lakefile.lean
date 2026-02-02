@@ -1,7 +1,7 @@
 import Lake
 open Lake DSL
 
-package «agora_lib» {
+package «agoralib» {
   -- add any package configuration options here
 }
 
@@ -10,7 +10,7 @@ require mathlib from git
 
 
 require VerifiedAgora from git
-  "https://github.com/stagiralabs/VerifiedAgora.git" @ "v4.17.0"
+  "https://github.com/stagiralabs/VerifiedAgora.git" @ "main"
 
 @[default_target]
 lean_lib Library where
