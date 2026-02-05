@@ -17,7 +17,7 @@ require "leanprover" / "Cli" @ git "v4.17.0"
 
 
 require VerifiedAgora from git
-  "https://github.com/stagiralabs/VerifiedAgora.git" @ "v4.17.0"
+  "https://github.com/stagiralabs/VerifiedAgora.git" @ "main"
 
 @[default_target]
 lean_lib Library where
